@@ -1,4 +1,4 @@
-### *Acuérdate de leer todas las instrucciones*
+### :bangbang: *Acuérdate de leer todas las instrucciones*
 
 # Mejorando el JSON con streams, taller
 
