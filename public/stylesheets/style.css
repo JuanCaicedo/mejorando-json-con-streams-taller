@@ -1,0 +1,64 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.grid {
+  width: 480px;
+  margin: 0;
+  outline: 2px solid black;
+}
+
+.row {
+  width: 100%;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.cell {
+  width: 20px;
+  height: 100%;
+  outline: 1px solid black;
+  display: inline-block;
+  margin: 0;
+}
+
+.data {
+  border: 1px solid black;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.sets {
+  border: 1px solid red;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.cards {
+  border: 1px solid blue;
+  font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.orange {
+  background-color: Orange;
+}
+
+.black {
+  background-color: Black;
+}
+
+.blue {
+  background-color: DodgerBlue;
+}
+
+.pink {
+  background-color: Pink;
+}
+
+.yellow {
+  background-color: Yellow;
+}
