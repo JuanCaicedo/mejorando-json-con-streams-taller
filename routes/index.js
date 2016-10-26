@@ -3,6 +3,7 @@ var fs = require('fs');
 var path = require('path');
 var highland = require('highland');
 var oboe = require('oboe');
+var request = require('request');
 
 var router = express.Router();
 
