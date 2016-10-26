@@ -1,31 +1,14 @@
 ### :bangbang: *Acuérdate de leer todas las instrucciones*
 
-# Mejorando el JSON con streams, taller
+# 1. Leer el gato
 
-## Como seguir este taller
+El primer paso es poder leer los datos del gato y mandarlos al cliente. Esos
+puntos estan en un archivo JSON. Podríamos leer el archivo con `require` o
+`fs.readFile`, pero no nos darán la flexibildad de los streams.
 
-Las instrucciones estan dividas en varios pasos. Cambia el branch de github y
-sigue cada uno de los pasos.
-
-## Antes de empezar
-
-- Clonar este repo
-
-  ```
-  $ git clone https://github.com/JuanCaicedo/mejorando-json-con-streams-taller.git
-  ```
-
-- Instalar dependencias
-
-  ```
-  $ npm install
-  ```
-
-## Para empezar la aplicación
-
-```
-$ npm run server
-```
-
-Esto lanzará el servidor usando `nodemon`, con lo cual lo reiniziará apenas
-hagas algun cambio.
+- Cambia la ruta `/datos` de `routes/index.js`
+- Lee `data/gato.json` con `fs.createReadStream`
+- El `res` de express es un writable stream, entonces toma el resultado del paso
+  anterior y pasaselo a `res` usando `pipe`
+- Deberías poder ver los datos con el navegador o con `curl` llendo
+  a <http://localhost:3000/datos>
