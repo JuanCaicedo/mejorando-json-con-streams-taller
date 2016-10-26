@@ -9,6 +9,11 @@ var router = express.Router();
 
 function streamDePuntos(stream) {
   return highland(function(push, next) {
+    stream.on('error', function(err) {
+      console.error(err);
+      push(null, highland.nil);
+    });
+
     oboe(stream)
       .node('{x y color}', function(punto) {
         push(null, punto);
